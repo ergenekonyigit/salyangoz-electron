@@ -1,4 +1,4 @@
-# Salyangoz Electon Menubar App
+# Salyangoz Electron Menubar App
 
 ## Screenshots
 
