@@ -1,0 +1,23 @@
+{
+    "name": "Salyangoz",
+    "version": "0.1.0",
+    "description": "Salyangoz Menubar Electron App",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ergenekonyigit"
+    },
+    "author": "Ergenekon Yigit",
+    "license": "MIT",
+    "dependencies": {
+        "menubar": "*"
+    },
+    "devDependencies": {
+        "electron-packager": "^7.0.3",
+        "electron-prebuilt": "^1.2.2"
+    },
+    "main": "index.js",
+    "scripts": {
+        "build": "electron-packager . Salyangoz --platform=darwin --arch=x64 --version=1.2.2 --icon=Icon.icns",
+        "start": "electron ."
+    }
+}
