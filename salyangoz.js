@@ -3,8 +3,8 @@ $(document).ready(function() {
     function salyangoz(e) {
         if (!e) {
             $('ul.icerik').css({
-                'marginTop': '0px',
-                opacity: 0
+                'marginTop':'0px',
+                opacity:0
             });
         }
 
@@ -40,9 +40,9 @@ $(document).ready(function() {
 
         }).done(function() {
             $('ul.icerik').animate({
-                'marginTop': '55px',
-                opacity: 1
-            }, 500)
+                'marginTop':'55px',
+                opacity:1
+            },500)
         })
 
     }
@@ -51,11 +51,11 @@ $(document).ready(function() {
     $('.refresh').on('click', function(e) {
         e.preventDefault();
         $('ul.icerik').animate({
-            opacity: 0,
-            'marginTop': '0px'
+            opacity:0,
+            'marginTop':'0px'
         },400).css({
-            'marginTop': '0px',
-            opacity: 0
+            'marginTop':'0px',
+            opacity:0
         })
         salyangoz('a');
 
