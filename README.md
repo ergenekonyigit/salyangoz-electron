@@ -2,7 +2,11 @@
 
 ## Screenshots
 
-![Salyangoz1](http://i.imgur.com/fGCJJpC.png)
+![Salyangoz](app.png)
+
+##### New colorful app icon
+
+![SalyangozIcon](appicon.png)
 
 ## Instructions
 
