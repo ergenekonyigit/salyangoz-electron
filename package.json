@@ -1,6 +1,6 @@
 {
     "name": "Salyangoz",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "Salyangoz Menubar Electron App",
     "repository": {
         "type": "git",
@@ -17,7 +17,8 @@
     },
     "main": "index.js",
     "scripts": {
-        "build": "electron-packager . Salyangoz --platform=darwin --arch=x64  --version-string.ProductVersion=0.1.1 --icon=Icon.icns",
+        "build": "electron-packager . Salyangoz --platform=darwin --arch=x64 --icon=Icon.icns",
+        "build": "electron-packager . Salyangoz --platform=win32 --arch=x64 --icon=Icon.ico",
         "start": "electron ."
     }
 }
