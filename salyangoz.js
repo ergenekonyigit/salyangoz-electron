@@ -38,13 +38,16 @@ $(document).ready(function() {
                         target: '_blank'
                     }).text(this['title']);
                     link.append(a);
-                    var info = $('<h6/>')
+                    var info = $('<h6/>');
+                    var note = $('<h6/>');
                     var t = new Date(this['updated_at']);
                     var e = moment(t).fromNow();
+                    var n = (this['note'] == null ? "" : this['note']);
+                    note.text(n + "\n");
                     info.text(this['user'].user_name + " · " + this['visit_count'] + " View" + " · " + e);
                     imagediv.append(profile);
-                    contentdiv.append(link).append(info);
-                    li.append(imagediv).append(contentdiv)
+                    contentdiv.append(link).append(note).append(info);
+                    li.append(imagediv).append(contentdiv);
                     $("ul.icerik").append(li);
                 });
 
